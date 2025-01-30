@@ -16,7 +16,7 @@ const PermissionTable = () => {
   const {
     data: roles = [],
     // isLoading
-  } = api.roles.getRoles.useQuery();
+  } = api.roles.getAdminRoles.useQuery();
   const {
     data: role_module_permissions = [],
     // isLoading: isLoadingRoleModulePermissons,

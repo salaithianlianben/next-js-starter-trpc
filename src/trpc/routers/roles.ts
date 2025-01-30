@@ -36,5 +36,14 @@ export const rolesRouter = router({
 
       if (error) throw error;
       return role as Role;
-    })
+    }),
+  getAdminRoles: protectedProcedure.query(async ({ ctx }) => {
+    const { data, error } = await ctx.supabase
+      .from(TABLE_ROLES)
+      .select("*")
+      .neq("name", "audience");
+
+    if (error) throw error;
+    return data as Role[];
+  }),
 });
