@@ -14,17 +14,17 @@ This project is built using:
 
 - Nextjs for the frontend
 - TailwindCSS for styling
-- Supabase for the backend and database management
-- TRPC for api integration 
+- (Supabase for the backend and database management)[https://supabase.com/]
+- [TRPC for api integration](https://trpc.io/)
 - Typescript
-- UI Shadcn
+- [UI Shadcn](https://ui.shadcn.com/)
 
 ## Getting Started
 
 Clone the project:
 ```bash
-git clone project.git
-cd project
+git clone https://github.com/salaithianlianben/next-js-starter-trpc.git
+cd next-js-starter-trpc
 ```
 
 Install requirements dependencies:
